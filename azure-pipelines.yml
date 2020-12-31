@@ -29,7 +29,7 @@ stages:
         repository: 'customapp1nginx'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
-        tags: |
+        tag: |
           $(tag)
           $(Build.SourceVersion)
 ## Publish Artifacts pipeline code in addition to Build and Push          
